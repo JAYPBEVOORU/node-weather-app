@@ -8,6 +8,7 @@ const app = express();
 app.set("view engine", "hbs"); //which is your template engine ?
 app.set("views", "templates/views"); //where are your templates ?
 
+
 const publicDirPath = path.join(__dirname, "../public");
 app.use(express.static(publicDirPath));
 hbs.registerPartials("templates/partials");
